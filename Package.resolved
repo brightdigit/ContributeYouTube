@@ -1,13 +1,13 @@
 {
-  "originHash" : "b9fa48154c5ebf75bf2cca7f13a8ffa5911f51255344a5f23292bd7c242859ee",
+  "originHash" : "162aabd8cc88d9bf20e9a19657bd8137c753cf70dbac47e8c519ae93f997389b",
   "pins" : [
     {
       "identity" : "contribute",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/brightdigit/Contribute.git",
       "state" : {
-        "branch" : "brightdigit-com-260621",
-        "revision" : "b674f44579bfcc55c389676ec6bd5af584d3dcbb"
+        "branch" : "main",
+        "revision" : "5dc9049fb106ca684ba432935ed24f32dfc83065"
       }
     },
     {
@@ -78,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/brightdigit/SwiftTube.git",
       "state" : {
-        "branch" : "brightdigit-com-260621",
-        "revision" : "06812e9bbe140c4f0052976a1651fb67bb8abd1f"
+        "branch" : "main",
+        "revision" : "e14840dbb174b238523641022efe0853e74f705d"
       }
     },
     {
