@@ -13,8 +13,11 @@ package via `git subrepo push`, then brought up to the shared BrightDigit packag
   `YouTubeContent.Source`, `FrontMatterTranslator`, `MarkdownExtractor`, the
   `write(episodes:…)` overloads, `YouTubePlaylistRequest`, `YoutubeError`, and the ISO-8601
   duration parser in `Extensions/TimeInterval.swift`.
-- Every public symbol is annotated `@available(*, deprecated)` — the module is retained for the
-  existing `brightdigit.com` import path and is scheduled for removal.
+- No deprecation annotations: an interim blanket
+  `@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")` on all
+  ten public symbols was removed. The root `brightdigit.com` package imports and compiles
+  against this module today, so the deprecation was inaccurate, and it prevented swift-testing
+  from attaching `@Suite`/`@Test` to anything that touches these APIs.
 - `Package.swift` moves to tools-version 6.4 with Swift 6 language mode, platform floors of
   macOS 15 / iOS 16 / tvOS 16 / watchOS 9, and remote branch pins for the `Contribute` and
   `SwiftTube` dependencies (previously in-repo `path:` references).
@@ -23,8 +26,11 @@ package via `git subrepo push`, then brought up to the shared BrightDigit packag
 
 ### Tests
 
-- Added the `ContributeYouTubeTests` target with a swift-testing placeholder suite so the
-  package ships a runnable test target.
+- Added the `ContributeYouTubeTests` target with five swift-testing suites (27 tests, several
+  parameterized): the ISO-8601 duration parser in `Extensions/TimeInterval.swift`,
+  `FrontMatterTranslator` field mapping and date formatting, `MarkdownExtractor` pass-through
+  behaviour, `videoDurations(_:)` title keying and `YoutubeError.duplicateTitle`, and the
+  `write(episodes:…)` overloads writing real markdown into a temporary directory.
 
 ### CI
 

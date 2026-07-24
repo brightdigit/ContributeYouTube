@@ -30,7 +30,6 @@
 import Contribute
 import Foundation
 
-@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")
 extension YouTubeContent {
   /// Maps a decoded YouTube video onto the YAML front matter written above each markdown body.
   public struct FrontMatterTranslator: Contribute.FrontMatterTranslator {

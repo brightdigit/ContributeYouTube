@@ -30,10 +30,9 @@ directory of markdown files your static-site generator can render.
 `brightdigit.com` uses it to import the [Empower Apps](https://brightdigit.com/podcast) episode
 videos into a Swift static site generator.
 
-> **Deprecated.** Every public symbol in this module is annotated
-> `@available(*, deprecated)` and scheduled for removal. It exists to keep the existing
-> `brightdigit.com` import path working. New code should build on `Contribute` and `SwiftTube`
-> directly.
+> **Scope.** This module is a thin adapter for `brightdigit.com`'s import path. It is actively
+> used and supported, but it is deliberately narrow — anything beyond "playlist in, markdown out"
+> belongs in `Contribute` or `SwiftTube`.
 
 ## Installation
 

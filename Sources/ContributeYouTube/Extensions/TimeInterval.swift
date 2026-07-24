@@ -29,7 +29,6 @@
 
 import Foundation
 
-@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")
 extension TimeInterval {
   /// Parses a YouTube ISO-8601 duration string such as `PT1H2M3S` into seconds.
   ///

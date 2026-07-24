@@ -30,7 +30,6 @@
 import Foundation
 
 /// The credentials and playlist identifier needed to fetch a playlist's videos.
-@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")
 public struct YouTubePlaylistRequest {
   internal let apiKey: String
   internal let playlistID: String

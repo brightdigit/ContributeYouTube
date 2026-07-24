@@ -11,10 +11,12 @@ pipeline. It fetches a playlist's videos through
 `YouTubeContent.Source` value, and writes Markdown files with YAML front matter into a content
 directory. It is consumed as a library; there is no executable target.
 
-Every public symbol in the module is currently marked
-`@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")` — the module
-is retained for the existing `brightdigit.com` import path only. Do not build new features on it;
-keep the deprecation annotations in place when editing.
+The module is a deliberately thin adapter for the `brightdigit.com` import path, and the root
+`brightdigit.com` package compiles against it today. It is **not** deprecated — an earlier
+blanket `@available(*, deprecated)` annotation on every public symbol was removed because the
+module is in active use (and because swift-testing refuses to attach `@Suite`/`@Test` to
+deprecated declarations). Do not reintroduce it. Keep the module narrow: anything beyond
+"playlist in, markdown out" belongs in `Contribute` or `SwiftTube`.
 
 ## Commands
 

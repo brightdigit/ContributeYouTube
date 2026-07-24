@@ -30,7 +30,6 @@
 import Contribute
 import Foundation
 
-@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")
 extension YouTubeContent {
   /// Produces the markdown body for a YouTube video.
   ///

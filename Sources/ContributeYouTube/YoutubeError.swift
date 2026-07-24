@@ -31,7 +31,6 @@ import Contribute
 import Foundation
 
 /// An error raised while decoding YouTube videos into importable sources.
-@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")
 public enum YoutubeError: ContributeError {
   /// A required field was absent from the API response for the described video.
   case missingFieldForVideo(String, VideoField)

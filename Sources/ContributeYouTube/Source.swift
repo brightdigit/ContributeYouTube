@@ -32,10 +32,8 @@ import Foundation
 /// A lookup of decoded YouTube videos keyed by video title.
 ///
 /// Produced by ``YouTubeContent/videoDurations(_:)``.
-@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")
 public typealias VideoDurations = [String: YouTubeContent.Source]
 
-@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")
 extension YouTubeContent {
   /// A single YouTube video, decoded into the fields the import pipeline needs.
   public struct Source: Equatable, Sendable {

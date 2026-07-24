@@ -39,7 +39,6 @@ import SwiftTube
 ///
 /// This is the `Contribute` `ContentType` for YouTube: fetch with
 /// ``videos(byRequest:)``, then write with one of the `write(episodes:…)` overloads.
-@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")
 public enum YouTubeContent: ContentType {
   /// The decoded video model the pipeline operates on.
   public typealias SourceType = Source
@@ -49,7 +48,6 @@ public enum YouTubeContent: ContentType {
   public typealias FrontMatterTranslatorType = FrontMatterTranslator
 }
 
-@available(*, deprecated, message: "Scheduled for removal; do not use in new code.")
 extension YouTubeContent {
   /// Fetches every video in the request's playlist via the async
   /// swift-openapi-generator `YouTubeClient`, mapping each into a ``Source``.

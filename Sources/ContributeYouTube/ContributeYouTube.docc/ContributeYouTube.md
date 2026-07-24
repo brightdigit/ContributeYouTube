@@ -41,9 +41,9 @@ try YouTubeContent.write(
 of the fetched videos; conflicting entries that share a title raise
 ``YoutubeError/duplicateTitle(_:forVideos:)``.
 
-> Important: Every public symbol in this module is deprecated and scheduled for removal. It exists
-> to serve the existing `brightdigit.com` import path. New code should build directly on
-> `Contribute` and `SwiftTube`.
+> Note: This module is a deliberately thin adapter serving the `brightdigit.com` import path.
+> It is actively used and supported; functionality beyond "playlist in, markdown out" belongs
+> in `Contribute` or `SwiftTube`.
 
 ## Topics
 
