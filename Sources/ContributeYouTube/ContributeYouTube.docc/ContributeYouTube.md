@@ -4,6 +4,8 @@ Turn a YouTube playlist into Markdown files with YAML front matter.
 
 ## Overview
 
+![Logo](ContributeYouTubeLogo.svg)
+
 `ContributeYouTube` is the YouTube adapter for the
 [Contribute](https://github.com/brightdigit/Contribute) pipeline. Contribute defines a
 source-agnostic shape — a front-matter translator, a markdown extractor, and a `ContentType` that

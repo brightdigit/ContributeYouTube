@@ -1,4 +1,4 @@
-![ContributeYouTube Logo](Sources/ContributeYouTube/ContributeYouTube.docc/Resources/ContributeYouTubeLogo.png)
+![ContributeYouTube Logo](Sources/ContributeYouTube/ContributeYouTube.docc/Resources/ContributeYouTubeLogo.svg)
 
 # ContributeYouTube
 
